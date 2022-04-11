@@ -10,16 +10,16 @@ class Stew < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/veda-p/stew/releases/download/v0.0.2/stew_0.0.2_macOS_arm64.tar.gz"
-      sha256 "342b9a36288e6549d7d15c31e48763cc26afbf14ea5949f5242a7e494a280696"
+      url "https://github.com/veda-p/stew/releases/download/v0.0.2/stew_0.0.2_macOS_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "ba4e75bf0c849905e1b9cadfa7e6d9904d724607ea78e55b1076defe69d336ef"
 
       def install
         bin.install "stew"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/veda-p/stew/releases/download/v0.0.2/stew_0.0.2_macOS_x86_64.tar.gz"
-      sha256 "f3f820005d14a2d73dfb15860416813d603269c15b9704e873fd343110f450ab"
+      url "https://github.com/veda-p/stew/releases/download/v0.0.2/stew_0.0.2_macOS_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "4a2f792f9f5cdf27d3d6ec28190b45435b6429e9707b29ac50637abd4fdae90b"
 
       def install
         bin.install "stew"
@@ -29,8 +29,8 @@ class Stew < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/veda-p/stew/releases/download/v0.0.2/stew_0.0.2_Linux_x86_64.tar.gz"
-      sha256 "49891c6176d2830ec9bb793ccef1371cef17cc1ef84165c965e84c22c4108dd1"
+      url "https://github.com/veda-p/stew/releases/download/v0.0.2/stew_0.0.2_Linux_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "7d8c1bb2cf4061b8519901a8dcb24ced1c50274b2a65ecc61c4c59b7054a84b9"
 
       def install
         bin.install "stew"
