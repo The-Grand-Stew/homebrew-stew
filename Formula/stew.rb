@@ -6,21 +6,21 @@ require_relative "lib/private"
 class Stew < Formula
   desc "A powerful CLI for the Create and Deploy App project"
   homepage ""
-  version "0.0.3"
+  version "0.1.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/veda-p/stew/releases/download/v0.0.3/stew_0.0.3_macOS_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "95b3f84387dd01e3975acf3328c71c17fd43dc1a1a1b6f69943d1459f87920d5"
+      url "https://github.com/The-Grand-Stew/stew/releases/download/0.1.0/stew_0.1.0_macOS_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "0f09a21f3e4eda09651b32a25eb7cd9e2a34a9f3cc6906576d368dfbf1bb2f3f"
 
       def install
         bin.install "stew"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/veda-p/stew/releases/download/v0.0.3/stew_0.0.3_macOS_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "e20fa54c8f162b80aa507f7086afd3f6664f0a98552b11dfbcd574ce1361ab44"
+      url "https://github.com/The-Grand-Stew/stew/releases/download/0.1.0/stew_0.1.0_macOS_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "ad16b090846cfa4e8e6bfe1057a5c4c5b07a884ca458fb8c36bb4e94aa378914"
 
       def install
         bin.install "stew"
@@ -30,8 +30,8 @@ class Stew < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/veda-p/stew/releases/download/v0.0.3/stew_0.0.3_Linux_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "eabdb11c86d2ea8ed9d8d7ee197a01725d974427b643f387ec7e0fa379177721"
+      url "https://github.com/The-Grand-Stew/stew/releases/download/0.1.0/stew_0.1.0_Linux_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "6e580811f1de49a673bb0f1f40afbd94a40ccae244cb2ba262653e17c832e71f"
 
       def install
         bin.install "stew"
@@ -42,4 +42,5 @@ class Stew < Formula
   depends_on "terraform"
   depends_on "git"
   depends_on "go"
+  depends_on "terragrunt"
 end
