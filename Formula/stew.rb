@@ -6,21 +6,21 @@ require_relative "lib/private"
 class Stew < Formula
   desc "A powerful CLI for the Create and Deploy App project"
   homepage ""
-  version "0.1.0"
+  version "0.1.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/The-Grand-Stew/stew/releases/download/0.1.0/stew_0.1.0_macOS_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "168ac2834f2d18306eec2e7f8bdf77b46022c15c953c98193dbca2f1fc6bc363"
+      url "https://github.com/The-Grand-Stew/stew/releases/download/0.1.1/stew_0.1.1_macOS_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "6d3605f0646e2b74941f67ad888d5a64f7d035a7734331ff97ce82f0b6e28afe"
 
       def install
         bin.install "stew"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/The-Grand-Stew/stew/releases/download/0.1.0/stew_0.1.0_macOS_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "f6338d6058e1cc13d15aa3e8c1a884d9e415c7580b53dbf873fe88aa5577db18"
+      url "https://github.com/The-Grand-Stew/stew/releases/download/0.1.1/stew_0.1.1_macOS_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "e1c672361cc611028662ae6531298cd152fbddc3aeee0b11369b06b857faaf47"
 
       def install
         bin.install "stew"
@@ -30,8 +30,8 @@ class Stew < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/The-Grand-Stew/stew/releases/download/0.1.0/stew_0.1.0_Linux_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "e5bb4d972bfa679089703d733d7b111ae71376fb960c11b3581addb6e0d258a8"
+      url "https://github.com/The-Grand-Stew/stew/releases/download/0.1.1/stew_0.1.1_Linux_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "37608776078dc2963cba0a53826db5dcaa682a2c35284133e7643f031504a769"
 
       def install
         bin.install "stew"
