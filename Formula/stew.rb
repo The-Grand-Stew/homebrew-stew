@@ -12,7 +12,7 @@ class Stew < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/The-Grand-Stew/stew/releases/download/0.1.0/stew_0.1.0_macOS_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "1c7c3bda31d759f6b426a14e39945b3ab1c2318b3347ee216327df3c99e20df7"
+      sha256 "168ac2834f2d18306eec2e7f8bdf77b46022c15c953c98193dbca2f1fc6bc363"
 
       def install
         bin.install "stew"
@@ -20,7 +20,7 @@ class Stew < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/The-Grand-Stew/stew/releases/download/0.1.0/stew_0.1.0_macOS_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "391fe921763b37345f11f9efb05b4df8db2ba7cf49a69902c46911a8b918d361"
+      sha256 "f6338d6058e1cc13d15aa3e8c1a884d9e415c7580b53dbf873fe88aa5577db18"
 
       def install
         bin.install "stew"
@@ -31,7 +31,7 @@ class Stew < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/The-Grand-Stew/stew/releases/download/0.1.0/stew_0.1.0_Linux_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "bb795baddce76480594f36dc426dde5c9bccf49a8368e121e0afb4130cab0f63"
+      sha256 "e5bb4d972bfa679089703d733d7b111ae71376fb960c11b3581addb6e0d258a8"
 
       def install
         bin.install "stew"
